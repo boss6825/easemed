@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "tsx scripts/seed.ts",
+    "test": "tsx --test lib/normalize.test.ts lib/trace.test.ts extract/extractLineItems.test.ts resolve/resolveDrug.test.ts"
   },
   "dependencies": {
     "better-sqlite3": "^11.10.0",
